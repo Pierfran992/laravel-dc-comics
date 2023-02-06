@@ -15,7 +15,9 @@
     @include('components.header')
 
     {{-- main --}}
-    @yield('content')
+    <div class="ms_container">
+        @yield('content')    
+    </div>
 
     {{-- footer --}}
     @include('components.footer')
