@@ -31,3 +31,7 @@ Route::get('/person/create', [MainCotroller::class, 'create'])
     ->name('person.create');
 Route::post('/person/store', [MainCotroller::class, 'store'])
     ->name('person.store');
+
+// edit
+Route::get('/person/edit/{person}', [MainCotroller::class, 'edit'])
+    ->name('person.edit');

@@ -51,4 +51,9 @@ class MainCotroller extends Controller
 
         return redirect()->route('home');
     }
+
+    // edit
+    public function edit(Person $person){
+        return view('pages.personEdit', compact('person'));
+    }
 }
