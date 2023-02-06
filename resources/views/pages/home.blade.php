@@ -17,7 +17,7 @@
             @foreach ($people as $person)
                 <tr>
                     <th scope="row" class="align-middle">
-                        <a href="" class="text-danger">{{ $person -> firstName }}</a>
+                        <a href="{{ route('person.show' , $person)}}" class="text-danger">{{ $person -> firstName }}</a>
                     </th>
                     <td class="align-middle">{{ $person -> lastName }}</td>
                     <td class="align-middle">{{ $person -> dateOfBirth }}</td>

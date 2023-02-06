@@ -17,3 +17,7 @@ use Illuminate\Support\Facades\Route;
 // index
 Route::get('/', [MainCotroller::class, 'home'])
     ->name('home');
+
+// show
+Route::get('/person/show/{person}', [MainCotroller::class, 'show'])
+    ->name('person.show');
