@@ -23,5 +23,5 @@
         </tbody>
     </table>
 
-    <a class="btn btn-danger ms_button" href="/">Return to list</a>
+    <a class="btn btn-danger ms_button mt-3" href="/">Return to list</a>
 @endsection

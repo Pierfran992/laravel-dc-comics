@@ -25,3 +25,7 @@ Route::get('/person/show/{person}', [MainCotroller::class, 'show'])
 // delete
 Route::get('/person/delete/{person}', [MainCotroller::class, 'delete'])
     ->name('person.delete');
+
+// create
+Route::get('/person/create', [MainCotroller::class, 'create'])
+    ->name('person.create');
