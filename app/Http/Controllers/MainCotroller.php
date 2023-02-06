@@ -36,7 +36,7 @@ class MainCotroller extends Controller
         $data = $request -> validate([
             'firstName' => 'required|string|max:32',
             'lastName' => 'required|string|max:32',
-            'dateOfBirth' => 'required|date',
+            'dateOfBirth' => 'required|date|before:today',
             'height' => 'nullable|integer|min:50|max:300',
         ]);
 
