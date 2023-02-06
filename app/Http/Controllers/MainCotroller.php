@@ -72,6 +72,6 @@ class MainCotroller extends Controller
 
         $person->save();
 
-        return redirect()->route('home');
+        return redirect()->route('person.show', $person);
     }
 }
