@@ -22,6 +22,11 @@
                     <td class="align-middle">{{ $person -> lastName }}</td>
                     <td class="align-middle">{{ $person -> dateOfBirth }}</td>
                     <td class="align-middle">{{ $person -> height ? $person -> height . " cm" : '' }} </td>
+                    <td class="align-middle">
+                        <a href="{{route('person.delete', $person)}}" class="btn btn-danger">
+                            <i class="fa-solid fa-trash"></i>
+                        </a>
+                    </td>
                 </tr>
             @endforeach
     </tbody>
