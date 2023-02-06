@@ -35,3 +35,5 @@ Route::post('/person/store', [MainCotroller::class, 'store'])
 // edit
 Route::get('/person/edit/{person}', [MainCotroller::class, 'edit'])
     ->name('person.edit');
+Route::post('person/update/{person}', [MainCotroller::class, 'update'])
+    ->name('person.update');
